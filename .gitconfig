@@ -1,0 +1,21 @@
+[user]
+	name = Vit Listik
+	email = tivvit@seznam.cz
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[http]
+	sslVerify = false
+[color]
+    ui = true
+	sh = auto
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+
+[push]
+	default = current
