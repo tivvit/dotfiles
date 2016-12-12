@@ -1,0 +1,32 @@
+ForwardAgent yes
+
+Host debian
+	User listik
+
+Host t
+        Hostname tivvit.dev
+        User tivvit
+        IdentityFile ~/.ssh/id_rsa
+
+Host w
+        Hostname web-kladno.cz
+        User root
+        IdentityFile ~/.ssh/private/id_rsa_mac
+
+Host scylla
+        Hostname s.tivvit.cz
+        User root
+        IdentityFile ~/.ssh/private/s.tivvit.cz
+
+Host jarvis
+        Hostname j.tivvit.cz
+        User tivvit
+        IdentityFile ~/.ssh/private/id_rsa_mac
+
+Host jtivvit.dev
+	Hostname jtivvit.dev
+	User tivvit 
+	RemoteForward /tmp/dbus /tmp/dbus
+
+Host repo.dev
+	User listik
