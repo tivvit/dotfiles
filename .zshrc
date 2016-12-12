@@ -85,8 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source .exports_local
+
 if [ -e .zshrc_local ]
 then
 	bash .zshrc_local
 fi
-
