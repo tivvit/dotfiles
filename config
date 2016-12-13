@@ -30,3 +30,8 @@ Host jtivvit.dev
 
 Host repo.dev
 	User listik
+
+Host sa
+	Hostname surfarena.cz
+	User root
+	IdentityFile ~/.ssh/private/id_rsa_mac
