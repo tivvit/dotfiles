@@ -1,2 +1,3 @@
 alias dot=dotfiles
 alias dc=docker-compose
+alias gg="cd ~/git"
