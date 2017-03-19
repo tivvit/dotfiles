@@ -92,10 +92,10 @@ function dotfiles {
 }
 
 source .exports_local
+source .aliases
 
 if [ -e .zshrc_local ]
 then
 	bash .zshrc_local
 fi
 
-alias dot=dotfiles
