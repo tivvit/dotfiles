@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/tivvit/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -87,9 +87,15 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
+function dotfiles {
+   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+
 source .exports_local
 
 if [ -e .zshrc_local ]
 then
 	bash .zshrc_local
 fi
+
+alias dot=dotfiles
