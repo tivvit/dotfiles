@@ -90,6 +90,7 @@ DEFAULT_USER=`whoami`
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
+alias dc=docker-compose
 
 source .exports_local
 source .aliases
