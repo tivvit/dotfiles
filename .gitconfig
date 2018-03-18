@@ -5,7 +5,7 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [http]
-	sslVerify = false
+	sslVerify = true
 [color]
     ui = true
 	sh = auto

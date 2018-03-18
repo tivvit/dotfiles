@@ -100,3 +100,17 @@ then
 	bash .zshrc_local
 fi
 
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+export PATH="/usr/local/sbin:$PATH"
+
+alias scli='source scli'
+alias kubectl='scli kubectl'
+#alias openstack='source scli openstack'
+
+alias scli-dev-mode='alias scli="source ~/git/szn/scli/scli.sh"'
+alias scli-prod-mode='alias scli="source scli"'
+
+fpath=(/usr/local/share/zsh-completions /Users/vit.listik/.oh-my-zsh/plugins/git /Users/vit.listik/.oh-my-zsh/functions /Users/vit.listik/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.2/functions)
+
