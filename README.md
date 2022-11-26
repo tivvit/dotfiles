@@ -2,4 +2,4 @@
 tivvit's dotfiles
 
 ## Install
-`yadm clone https://github.com/tivvit/dotfiles`
+`yadm clone git@github.com:tivvit/dotfiles.git`
