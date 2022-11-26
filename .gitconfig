@@ -1,6 +1,11 @@
+# This is Git's per-user configuration file.
 [user]
-	name = Vit Listik
+	name = Vít Listík
 	email = tivvit@seznam.cz
+
+[submodule]
+	recurse = true
+
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
