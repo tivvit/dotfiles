@@ -9,21 +9,23 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
+
 [http]
 	sslVerify = true
+
 [color]
-    ui = true
+	ui = true
 	sh = auto
 
 [alias]
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 
 [push]
 	default = current
 
 [include]
-    path = .gitconfig_local
+	path = .gitconfig_local
