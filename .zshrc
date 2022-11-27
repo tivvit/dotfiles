@@ -108,8 +108,6 @@ source $HOME/.aliases
 
 export PATH=$PATH:/home/tivvit/go/bin:/home/linuxbrew/.linuxbrew/bin
 
-alias mc="mc -b"
-
 #set history size
 export HISTSIZE=1000000000000000
 #save history after logout
@@ -126,10 +124,7 @@ bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f ~/.resh/shellrc ] && source ~/.resh/shellrc
-
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
->>>>>>> origin/master

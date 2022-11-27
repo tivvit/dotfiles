@@ -1,3 +1,4 @@
 alias dc=docker-compose
 alias gg="cd ~/git"
 alias cat=bat
+alias mc="mc -b"
