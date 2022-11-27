@@ -1,5 +1,0 @@
-export DOWNLOADS_PATH=Downloads
-export JTIVVIT_MOUNT_POINT=szn_jtivvit
-export TIVVIT_MOUNT_POINT=szn_tivvit
-export JARVIS_MOUNT_POINT=jarvis
-export MFS_MOUNT_POINT=mfs

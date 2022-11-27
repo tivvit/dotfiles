@@ -1,12 +1,19 @@
+# This is Git's per-user configuration file.
 [user]
-	name = Vit Listik
+	name = Vít Listík
 	email = tivvit@seznam.cz
 	signingkey = 2B2411D31A0CE5BDC37C7463AF05D14A0DD0A09F
+
+[submodule]
+	recurse = true
+
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
+
 [http]
-	sslVerify = false
+	sslVerify = true
+
 [color]
 	ui = true
 	sh = auto
