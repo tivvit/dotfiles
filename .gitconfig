@@ -30,9 +30,6 @@
 [push]
 	default = current
 
-[include]
-	path = .gitconfig_local
-
 [commit]
 	gpgsign = true
 
