@@ -1,24 +1,33 @@
 [user]
 	name = Vit Listik
 	email = tivvit@seznam.cz
+	signingkey = 2B2411D31A0CE5BDC37C7463AF05D14A0DD0A09F
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [http]
 	sslVerify = false
 [color]
-    ui = true
+	ui = true
 	sh = auto
 
 [alias]
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+	c = commit
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 
 [push]
 	default = current
 
 [include]
-    path = .gitconfig_local
+	path = .gitconfig_local
+
+[commit]
+	gpgsign = true
+
+[submodule]
+	recurse = true

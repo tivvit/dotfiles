@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -48,11 +48,14 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+#zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_szn id_rsa4k_szn
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,11 +95,34 @@ function dotfiles {
 }
 alias dc=docker-compose
 
-source .exports_local
-source .aliases
+source $HOME/.aliases
 
 if [ -e .zshrc_local ]
 then
 	bash .zshrc_local
 fi
 
+export PATH=$PATH:/home/tivvit/go/bin:/home/linuxbrew/.linuxbrew/bin
+
+alias mc="mc -b"
+
+#set history size
+export HISTSIZE=1000000000000000
+#save history after logout
+export SAVEHIST=1000000000000000
+#export HSTR_CONFIG=hicolor,keywords-matching
+export HISTFILESIZE=10000000000000000
+export HISTSIZE=${HISTFILESIZE}
+
+
+# add this configuration to ~/.zshrc
+export HISTFILE=~/.zsh_history  # ensure history file visibility
+export HH_CONFIG=hicolor,keywords-matching        # get more colors
+bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.resh/shellrc ] && source ~/.resh/shellrc
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
