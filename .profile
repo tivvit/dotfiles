@@ -32,3 +32,5 @@ if [ -e /home/tivvit/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tivvit/.n
 
 # Added by Toolbox App
 export PATH="$PATH:/home/tivvit/.local/share/JetBrains/Toolbox/scripts"
+
+export PATH=/home/tivvit/.cargo/bin:/usr/share/Modules/bin:/home/tivvit/.cargo/bin:/home/tivvit/.local/bin:/home/tivvit/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/tivvit/.local/share/JetBrains/Toolbox/scripts:/home/tivvit/.local/share/JetBrains/Toolbox/scripts:/home/tivvit/go/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/opt/fzf/bin:/home/tivvit/.resh/bin:/home/tivvit/.vector/bin
