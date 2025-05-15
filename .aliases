@@ -1,5 +1,7 @@
 alias dc=docker-compose
 alias gg="cd ~/git"
 alias cat=bat
-alias ls=exa
+alias ls=eza
 alias mc="mc -b"
+alias vim="nvim"
+alias vi="nvim"

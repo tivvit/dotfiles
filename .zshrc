@@ -127,9 +127,6 @@ bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-alias vim="nvim"
-alias vi="nvim"
-
 source <(jj util completion zsh)
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
